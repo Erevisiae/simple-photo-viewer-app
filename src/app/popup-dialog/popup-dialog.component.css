@@ -1,0 +1,24 @@
+.main-container
+{
+    background-color: white;
+    position: relative !important;
+    height: 300px;
+    width: 400px;
+    font-size: 20px;
+}
+.close-button{
+    float: right;
+    top:-24px;
+    right:-24px;
+    position:sticky;
+  }
+  
+  h1{
+    float:left;
+    top:24px;
+    right:24px;
+  }
+  .item1
+  {
+    display: block;
+  }

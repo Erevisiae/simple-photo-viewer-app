@@ -1,0 +1,67 @@
+
+img {
+  height: 150px;
+  width: 200px;
+  opacity: 0.9;
+ 
+}
+
+
+  .pagination /deep/ .ngx-pagination .current span{
+    display: inline-block;
+    padding: 3px 0 0 0;
+    color: white;
+}
+
+   .pagination /deep/ .ngx-pagination a::after{
+     display: none;
+   }
+
+   .pagination /deep/ .ngx-pagination li
+   {
+    color: #009999;
+    border: 1px solid #CCCC;
+    margin-right: 0px;
+   }
+   .pagination /deep/ .ngx-pagination li::before{
+     display: none;
+   }
+
+    .pagination /deep/ .ngx-pagination li::after{
+     display: none;
+   }
+
+    .pagination /deep/ .ngx-pagination a::before{
+     display: none;
+   }
+  
+.tm-hero
+{
+    background-image: url("../../assets/img/hero.jpg");
+    background-size:cover;
+}
+div.tm-hero.d-flex.justify-content-center.align-items-center > div > input
+{
+    width: 700px;
+}
+
+.row
+{
+  width: 20%;
+  flex-wrap: nowrap;
+}
+
+.card
+{
+  float: left;
+}
+
+.form-group
+{
+  text-align:center;
+}
+
+.pagination{
+display: block;
+padding-top: 50px;
+}

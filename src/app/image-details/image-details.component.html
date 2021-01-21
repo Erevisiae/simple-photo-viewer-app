@@ -1,0 +1,23 @@
+<div class="main-container">
+<mat-card class="card">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>{{photoDetails.title}}</mat-card-title>
+  </mat-card-header>
+  <img mat-card-image src="https://farm{{photoDetails.farm}}.staticflickr.com/{{photoDetails.server}}/{{
+    photoDetails.id
+  }}_{{photoDetails.secret}}_m.jpg"
+title="{{photoDetails.title}}" alt="{{photoDetails.title}}">
+  <mat-card-content>
+    <p>
+      Secret: {{photoDetails.secret}}<br>
+      Id: {{photoDetails.id}}
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button (click)="back()">BACK</button>
+    <button mat-button>SHARE</button>
+  </mat-card-actions>
+</mat-card>
+</div>
+

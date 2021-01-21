@@ -1,0 +1,41 @@
+<div class="tm-hero d-flex justify-content-center align-items-center" data-parallax="scroll" data-image-src="../../assets/img/hero.jpg">
+  <div class="d-flex tm-search-form">
+      <input class="form-control tm-search-input" type="search" [(ngModel)]="this.keyword" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success tm-search-btn"(click)="search($event)" img>
+          <i class="fas fa-search"></i>
+      </button>
+    </div>
+</div>
+<div class="container">
+  <div class="form-group">
+    <div class="row" >
+      <div class="" *ngFor="let image of images | paginate: { itemsPerPage: 5, currentPage: p }" id="flickr_image">
+        <br>
+        <div class="card" >
+
+          <figure class="effect-ming tm-video-item">
+            <img class="img-fluid"
+            src="https://farm{{image.farm}}.staticflickr.com/{{image.server}}/{{
+            image.id
+          }}_{{image.secret}}_m.jpg"
+            title="{{image.title}}"
+          >
+            <figcaption class="d-flex align-items-center justify-content-center">
+                <h2>Details</h2>
+                <a [routerLink]="['/details']" (click)="setImageId(image)"></a>
+            </figcaption>                    
+          </figure>
+       
+        </div>
+        <br>
+      </div>
+    </div>
+    <pagination-controls class="pagination" (pageChange)="p = $event"></pagination-controls>
+  </div>
+</div>
+
+
+
+
+
+  
