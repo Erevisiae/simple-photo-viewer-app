@@ -46,7 +46,7 @@ const appRoutes: Routes = [
     MatFormFieldModule
   ],
   declarations: [AppComponent, ImageSearchComponent, ImageDetailsComponent, HeaderComponent, FooterComponent, PopupDialogComponent],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent,ImageSearchComponent],
   providers: [FlickrService]
 })
 export class AppModule {}
